@@ -13,18 +13,16 @@ body {
     justify-content: center;
     align-items: center;
     justify-items: center; 
-    width: 100vw;
+    width: 100wh;
     background-color: rgb(255, 255, 255);
 }
 
 main {
-    width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-
 }
 
 .header {
@@ -90,7 +88,7 @@ main {
    justify-content: center;
    grid-column: 2/3;
    grid-row: 2/3;
-   background-color: #1f654e; 
+   background-color: rgb(10, 132, 110);
    min-width: 100%;
    min-height: 100%;
 }
@@ -143,10 +141,10 @@ h1 {
 
 .article1 {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 60%;
     background-color: white;
     
 }
@@ -155,7 +153,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f654e;
+    background-color: rgb(10, 132, 110);
     border-radius: 50%;
     height: 22rem;
     width: 22rem;
@@ -180,11 +178,11 @@ h1 {
 
 .article1__button {
     border-style: none;
-    background-color: #1f654e;
+    background-color: rgb(10, 132, 110);
     color: rgb(255, 255, 255);
     border-radius: 0.6rem;
-    height: 4rem;
-    width: 10rem;
+    height: 3.5rem;
+    width: 12rem;
     margin-top: 1rem;
     font-family: 'Open Sans';
     font-size: 1.5rem;
@@ -193,11 +191,13 @@ h1 {
 }
 
 .greenline {
-    background-color: #1f654e;
+    place-self: center;
+    grid-column: 1/3;
+    background-color: rgb(10, 132, 110);
     width: 25rem;
     height: 0.2rem;
     margin-top: 5rem;
-    margin-left: 12rem;
+    margin-left: 1rem;
     margin-bottom: 8rem;
 }
 
@@ -275,18 +275,19 @@ h1 {
 }
 
 .article2__button2 {
-    background-color: #1f654e;
+    background-color: rgb(10, 132, 110);
     color: white;
     border-style: none;
     font-family: 'Open Sans';
+    font-weight: 600;
     font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 5rem;
-    width: 9rem;
-    height: 3.5rem;
+    width: 11rem;
+    height: 3.3rem;
     border-radius: 0.6rem;
 }
 
@@ -304,13 +305,12 @@ h1 {
 .article3__box1 {
     display: flex;
     justify-content: center;
-    background-color: #1f654e;
+    background-color: rgb(10, 132, 110);
     border-radius: 50%;
-    place-self: end;
     height: 24rem;
     width: 24rem;
     aspect-ratio: 1/1;
-    margin-right: 4rem;
+    margin-left: 6rem;
     margin-bottom: 6rem;
     
 
@@ -332,15 +332,19 @@ h1 {
 
 .article3__button {
     border-style: none;
-    background-color: #1f654e;
+    background-color: rgb(10, 132, 110);
     color: rgb(255, 255, 255);
-    border-radius: 0.6rem;
+    border-radius: 0.9rem;
     height: 3.5rem;
     width: 16rem;
     margin-top: 1rem;
     font-family: 'Open Sans';
     font-size: 1.5rem;
     
+}
+
+.article__trash {
+     display: none;
 }
 
 .foot {
@@ -351,13 +355,17 @@ h1 {
     overflow: hidden;
 }
 
-.foot__img {
+
+.foot__hand {
     grid-row: 1/span 2;
     grid-column: 1/span 2;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
+}
+
+.foot__hand--phone {
+    display: none;
 }
 
 .foot__logo {
