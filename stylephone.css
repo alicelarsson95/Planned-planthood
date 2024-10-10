@@ -148,6 +148,7 @@
        width: 1.3rem;
        justify-self: end;
        cursor: pointer;
+       display: block;
 
     }
 
