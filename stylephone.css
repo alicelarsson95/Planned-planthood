@@ -145,7 +145,7 @@
     }
 
     .article__trash {
-        width: 1.3rem;
+       width: 1.3rem;
        justify-self: end;
        cursor: pointer;
 

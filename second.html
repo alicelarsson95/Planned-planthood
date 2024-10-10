@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sida två</title>
     <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="stylephone2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -20,22 +21,25 @@
 
     <header class="header">
         <img class="header__img" src="img/Rectangle 31.png" alt="Hand">
+        <img class="header__img--phone" src="img/hand-picking-square.png">
         <img class="header__logo" src="img/Logo.svg" alt="Heart">
         <h1 class="header__h1">Mina sidor</h1>
+        <img class="header__burger" src="img/burgir.svg">
     </header>
 
         <article class="article">
-        <section class="article__text">
             <h2 class="article__h2">Lägg till ny plantering:</h2>
-        <form class="article__input__box">
+        <form class="article__form__box">
+                <div class="input-container">
                 <label for="plant">Planta:</label>
                 <input id="plant" class="article__input" type="text">
-                
+                </div>
+                <div class="input-container">
                 <label for="date">Datum:</label>
                 <input id="date" class="article__input" type="text">
+            </div>
+            <input class="article__button" value="LÄGG TILL" type="button"> 
         </form>
-        <button class="article__button">LÄGG TILL</button>
-        </section>
         </article>
 
         <h2 class="article2__h2">Dina planerade planteringar:</h2>
@@ -46,42 +50,44 @@
                     <img class="article2__logo" src="img/plant.svg" alt="planta">
         </section>
         <section class="article2__card__text">
-                    <h2 class="article2__veg">Gurka</h2>
-                    <p class="article2__date">15 april 2024</p>
-                    <p class="article2__p">Rico Coolio</p>
-                    <button class="article2__button">TA BORT</button>
+                <h2 class="article2__veg">Gurka</h2>
+                <p class="article2__date">15 april 2024</p>
+                <p class="article2__p">Rico Coolio</p>
+                <button class="article2__button">TA BORT</button>
+                <img class="article__trash" src="img/trash.png">
         </section>
         </article>
 
-        <h2 class="article3__h2">Dina planerade planteringar:</h2>
-        <article class="article3__cards">
-        <section class="article3__card">
-        <section class="article3__card__image">
-            <img class="article3__img" src="img/cucumber1.png" alt="gurka">
-            <img class="article3__logo" src="img/plant.svg" alt="planta">
+        <h2 class="article2__h2">Dina planerade planteringar:</h2>
+        <article class="article2__cards">
+        <section class="article2__card">
+        <section class="article2__card__image">
+            <img class="article2__img" src="img/cucumber1.png" alt="gurka">
+            <img class="article2__logo" src="img/plant.svg" alt="planta">
         </section>
-        <section class="article3__card__text">
-            <h2 class="article3__veg">Gurka</h2>
-            <p class="article3__date">15 april 2024</p>
-            <p class="article3__p">Rico Coolio</p>
-            <button class="article3__button">TA BORT</button>
+        <section class="article2__card__text">
+            <h2 class="article2__veg">Gurka</h2>
+            <p class="article2__date">15 april 2024</p>
+            <p class="article2__p">Rico Coolio</p>
+            <button class="article2__button">TA BORT</button>
+            <img class="article__trash" src="img/trash.png">
         </section>
         </section>
 
-        <section class="article3__card">
-        <section class="article3__card__image">
-            <img class="article3__img" src="img/cucumber1.png" alt="gurka">
-            <img class="article3__logo" src="img/plant.svg" alt="planta">
+        <section class="article2__card">
+        <section class="article2__card__image">
+            <img class="article2__img" src="img/cucumber1.png" alt="gurka">
+            <img class="article2__logo" src="img/plant.svg" alt="planta">
         </section>
-        <section class="article3__card__text">
-            <h2 class="article3__veg">Gurka</h2>
-            <p class="article3__date">15 april 2024</p>
-            <p class="article3__p">Rico Coolio</p>
-            <button class="article3__button">TA BORT</button>
+        <section class="article2__card__text">
+            <h2 class="article2__veg">Gurka</h2>
+            <p class="article2__date">15 april 2024</p>
+            <p class="article2__p">Rico Coolio</p>
+            <button class="article2__button">TA BORT</button>
+            <img class="article__trash" src="img/trash.png">
         </section>
         </section>
         </article>
-        <footer>
         <footer class="footer">
         <section class="footer__img">
             <img class="footer__picking" src="img/Rectangle 26.png" alt="picking">
@@ -89,11 +95,16 @@
             <img class="footer__greens" src="img/Rectangle 28.png" alt="vegtables">
             <img class="footer__picking" src="img/Rectangle 29.png" alt="happy">
         </section>
+        <section class="footer__phone">
+         <img class="footer__phone--img" src="img/picking-picking.png" alt="picking">  
+         <img class="footer__phone--img" src="img/water-square.png" alt="water"> 
+         <img class="footer__phone--img" src="img/greens-square.png" alt="vegtables">
+         <img class="footer__phone--img" src="img/happy.square.png" alt="happy">
+        </section>
         </footer>
         <nav class="footer__nav">
             <a class="nav__link" href="#top">Till toppen av sidan</a>
         </nav>
-        </footer>
 
             
 </body>

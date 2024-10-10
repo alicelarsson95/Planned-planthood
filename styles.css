@@ -13,7 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     justify-items: center; 
-    width: 100wh;
     background-color: rgb(255, 255, 255);
 }
 
@@ -33,6 +32,7 @@ main {
     overflow: hidden;
     box-shadow: 0 7px 10px 2px rgb(207, 204, 204);
 }
+
 
 .left__section {
     display: flex;
