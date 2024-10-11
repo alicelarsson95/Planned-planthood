@@ -1,111 +1,103 @@
-@media (max-width:768px) {
-
-.body {
+@media (max-width: 768px) {
+  .body {
     min-height: 100vh;
     width: 100%;
-    } 
-   
-.header {
-    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .header {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     min-width: 100%;
     position: relative;
-    }  
+  }
 
-.nav-header {
+  .nav-header {
     display: none;
-}
+  }
 
-.header__img--phone {
+  .header__img--phone {
     display: block;
     grid-column: 1/3;
     grid-row: 1/2;
     width: 100%;
     object-fit: cover;
     box-shadow: 0 7px 10px 2px rgb(173, 168, 168);
-}
+  }
 
-.header__img {
+  .header__img {
     display: none;
-}
+  }
 
-.header__h1 {
+  .header__h1 {
     font-weight: 500;
-}
+  }
 
-.header__burger {
+  .header__burger {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     margin: 1rem;
     cursor: pointer;
- }
+  }
 
-.article {
-   width: 100%;
-}
+  .article {
+    width: 100%;
+  }
 
- .input-container {
-  width: 80%;
- }
+  .input-container {
+    width: 80%;
+  }
 
- .article2__cards {
+  .article2__cards {
     grid-template-columns: repeat(2, 1fr);
- }
+    
+  }
 
- .article2__date {
+  .article2__date {
     font-size: 0.9rem;
- }
+  }
 
- .article2__card {
+  .article2__card {
     max-width: 80%;
-    margin-left: 1rem ;
- }
+    margin-left: 1rem;
+  }
 
- .article2__button {
+  .article2__button {
     display: none;
- }
+  }
 
- .article2__trash {
+  .article2__trash {
     width: 1.3rem;
     justify-self: end;
     cursor: pointer;
     color: brown;
     display: block;
+  }
 
- }
-
- .footer {
+  .footer {
     width: 100%;
-   
- }
+  }
 
- .footer__img {
+  .footer__img {
     display: none;
- }
+  }
 
- .footer__phone {
-   width: 100%;
-   height: 100%;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   justify-items: center;
-   align-items: center;
-   gap:0.5rem;
-   border: 1rem solid rgb(158, 109, 82); ;
+  .footer__phone {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1rem solid rgb(158, 109, 82);
+  }
 
- }
-
- .footer__phone--img {
+  .footer__phone--img {
     width: 100%;
     height: 100%;
     overflow: hidden;
-   
- }
-
-
-
+  }
 }
- 
